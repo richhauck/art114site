@@ -41,3 +41,25 @@ aside{
 figure{
 	margin: 0;
 }
+table{
+	border-spacing: 0;
+	border: 0.5px solid $borderColor;
+}
+th{
+	text-align: left;
+	color: #fff;
+	background-color: $darkGray;
+}
+td, th{
+	font-size: 14px;
+	border: 0.5px solid $borderColor;
+	padding: 2px 4px;
+	vertical-align: top;
+	ul{
+		margin-top: 0;
+	}
+	p, li{
+		margin: 0;
+		padding: 0;
+	}
+}
