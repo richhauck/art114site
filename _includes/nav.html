@@ -1,11 +1,11 @@
 <nav id="primary-nav">
   <div id="inner-nav">
     <ul>
-     <li><a href="{{ "/index" | prepend: site.baseurl }}">Syllabus</a></li>
+     <li><a href="{{ "/" | prepend: site.baseurl }}">Syllabus</a></li>
      <li><a href="{{ "/schedule" | prepend: site.baseurl }}">Schedule</a></li>
 
      <li>
-      <a href="">Projects</a>
+      <a href="{{ "/projects" | prepend: site.baseurl }}">Projects</a>
       <!--
 <ul>
           <li><a href="{{ "/projects/project-1" | prepend: site.baseurl }}">Project 1</a></li>
@@ -20,11 +20,11 @@
       <a href="{{ "/assignments/" | prepend: site.baseurl }}">Assignments</a>
   </li>
   <li>
-    <a href="">Resources</a>
+    <a href="#">Resources</a>
       <ul>
 
           <li>
-            <a href="{{ "/resources/tools/index" | prepend: site.baseurl }}">Tools</a>
+            <a href="{{ "/resources/tools/" | prepend: site.baseurl }}">Tools</a>
               <ul>
                   <li><a href="{{ "/resources/tools/text-editors" | prepend: site.baseurl }}">Text Editors</a></li>
                   <li><a href="{{ "/resources/tools/browser-inspectors" | prepend: site.baseurl }}">Browser Inspectors</a></li>
@@ -33,7 +33,7 @@
           </li>
 
           <li>
-            <a href="{{ "/resources/starting-a-project/index" | prepend: site.baseurl }}">Starting a Project</a>
+            <a href="{{ "/resources/starting-a-project/" | prepend: site.baseurl }}">Starting a Project</a>
               <ul>
                   <li><a href="{{ "/resources/starting-a-project/sitemap" | prepend: site.baseurl }}">Sitemap</a></li>
                   <li><a href="{{ "/resources/starting-a-project/wireframes" | prepend: site.baseurl }}">Wireframes</a></li>
