@@ -17,6 +17,10 @@
     width: 100%;
   }
 }
+#code-sample{
+	padding: $base-padding;
+	width: calc(100% - ($base-padding*2));
+  }
 
 .box{
 	margin: $base-padding auto;
