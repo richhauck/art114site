@@ -1,6 +1,9 @@
 *{
 	box-sizing: border-box;
 }
+#main{
+	overflow: hidden;
+}
 #content{
   margin: $headerHeight 0 0 320px;
 

@@ -52,6 +52,9 @@
       margin: 0;
       font-size: 2em;
       line-height: 1.1em;
+      @include mappy-bp(max-width large) {
+        font-size: 1.5em;
+      }
       a{
         color: #fff;
       }
