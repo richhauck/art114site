@@ -28,30 +28,30 @@
         beatlesMembers[3] = 'Ringo';
         
         // U2
-        let u2Members = ['Bono', 'The Edge', 'Adam Clayton', 'Larry Mullen, Jr.'];
+        const u2Members = ['Bono', 'The Edge', 'Adam Clayton', 'Larry Mullen, Jr.'];
         document.getElementById('output').innerHTML = u2Members[0];
         
         // Tell JavaScript to remember certain buttons
-        var randomBtn = document.getElementById('randomBtn');
-        var u2ListBtn = document.getElementById('u2ListBtn');
+        const randomBtn = document.getElementById('randomBtn');
+        const u2ListBtn = document.getElementById('u2ListBtn');
         
         // Tell JavaScript to tell buttons to behave on event
-        randomBtn.onclick = function(event){
+        randomBtn.onclick = (event) => {
             showRandomBeatle(event);
         }
-        u2ListBtn.onclick = function(event){
+        u2ListBtn.onclick = (event) => {
             listU2Members(event);
         }
         // Define functions
-        function showRandomBeatle(event){
-            var rand = Math.random()*3;
+        showRandomBeatle = (event) => {
+            const rand = Math.random()*3;
             rand = Math.round(rand);
             document.getElementById('output').innerHTML = beatlesMembers[rand];
         }
-        function listU2Members(event){
+        listU2Members = (event) => {
             let u2List = '<ul>';
             for (let i = 0; i < u2Members.length; i++) { 
-                u2List += '<li>' + u2Members[i] + '</li>';
+                u2List += `<li>${u2Members[i]}</li>`;
             }
             u2List += '</ul>';
             document.getElementById('output').innerHTML = u2List;
